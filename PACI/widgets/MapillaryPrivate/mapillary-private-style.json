@@ -1,0 +1,47 @@
+{
+	"version": 8,
+	"sources": {
+		"mapillary-source": {
+			"tiles": [
+				"https://a.mapillary.com/v3/project_coverage/{z}/{x}/{y}.mvt"
+			],
+			"type": "vector",
+			"minzoom": 0
+		}
+	},
+	"sprite": "widgets/MapillaryPrivate/images/sprites",
+	"layers": [
+		{
+			"id": "mapillary-dots",
+			"type": "symbol",
+			"source": "mapillary-source",
+			"source-layer": "mapillary-images",
+			"interactive": true,
+			"minzoom": 14,
+			"layout": {
+				"icon-image": "dot-0",
+				"icon-allow-overlap": true,
+				"symbol-avoid-edges": true
+			}
+		},
+		{
+			"id": "mapillary-lines",
+			"type": "line",
+			"source": "mapillary-source",
+			"source-layer": "mapillary-sequences",
+			"interactive": true,
+			"minzoom": 0,
+			"maxzoom": 14,
+			"layout": {
+				"line-join": "round",
+				"line-cap": "round",
+				"visibility": "visible"
+			},
+			"paint": {
+				"line-opacity": 0.6,
+				"line-color": "#39AF64",
+				"line-width": 2
+			}
+		}
+	]
+}

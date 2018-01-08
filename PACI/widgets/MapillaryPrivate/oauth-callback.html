@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function loadHandler() {
+			if (opener) {
+				var response = opener.require("dojo/io-query").queryToObject(location.href);
+				opener.mapillaryUtils.setAuthToken(response.access_token).callbackOAuth(response);
+				close();
+			}
+			else {
+				close();
+			}
+		}
+	</script>
+</head>
+<body onload="loadHandler();">
+</body>
+</html>

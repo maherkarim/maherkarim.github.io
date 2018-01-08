@@ -1,0 +1,23 @@
+<svg width="100%" height="100%" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>390F95AB-67C8-42FF-B9FF-C317EDED2467</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="22" height="17" rx="4"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.278431373   0 0 0 0 0.290196078   0 0 0 0 0.305882353  0 0 0 0.4 0" type="matrix" in="shadowOffsetOuter1"/>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="view_component_photo" transform="translate(-12.000000, -12.000000)">
+            <g id="minimize" transform="translate(12.000000, 12.000000)">
+                <g id="Rectangle-211">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"/>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"/>
+                </g>
+                <rect id="Rectangle-210" fill="#474A4E" x="4" y="10" width="14" height="2" rx="100"/>
+            </g>
+        </g>
+    </g>
+</svg>

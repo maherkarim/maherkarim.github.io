@@ -1,0 +1,20 @@
+.mapillary-setting .mapillary-setting-notify {
+	background-color: orange;
+	color: black;
+	max-width: 300px;
+	padding: 1em;
+	font-size: 0.7em;
+	margin: 1em 0;
+}
+
+.mapillary-setting .mapillary-setting-field {
+	margin-bottom: 1.5em;
+}
+
+.mapillary-setting .mapillary-setting-field label {
+	display: block;
+}
+
+.mapillary-setting .mapillary-setting-field input {
+	width: 60%;
+}

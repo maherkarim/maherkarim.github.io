@@ -1,0 +1,81 @@
+@import url("../lib/mapillary-js/mapillary.min.css");
+
+.mly-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.mapillary-js {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-bottom: 75%;
+}
+.mapillary-js .mapillary-js-interactive,
+.mapillary-js .mapillary-js-dom {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.mapillary-notice {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	padding-bottom: 75%;
+	width: 100%;
+	color: #000;
+	background: #FFF;
+	text-align: center;
+}
+.mapillary-authorize {
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,sans-serif;
+	text-align: center;
+	padding-top: 50px;
+}
+.mapillary-authorize p {
+	margin-bottom: 1em;
+}
+.mapillary-authorize .jimu-btn {
+	font-size: 16px;
+	font-weight: 400;
+	display: inline-block;
+	line-height: 1.125rem;
+	margin: 0;
+	height: auto;
+	vertical-align: middle;
+	background: #36af6d;
+	width: 50%;
+	min-width: 100px;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	color: #fff;
+	padding: .5rem 2rem;
+	transition: all .2s ease-in-out;
+}
+.mapillary-authorize .jimu-btn:active,.mapillary-authorize .jimu-btn:hover {
+	background-color: #197a45
+}
+.mapillary-js .mapillary-notice.error {
+	background: #E6E9ED;
+	color: #E05643;
+	border: 1px solid #E05643;
+	border-radius: 5px;
+}
+
+.mapillary-js canvas {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.hide-viewer-content #mly-prv {
+	display: none;
+}
+
+.hide-viewer-content .mapillary-notice {
+	display: block;
+}

@@ -1,0 +1,46 @@
+<div class="wrapper">
+	<div class="mapillary-authorize" data-dojo-attach-point="authorizeNode" style="display:none;">
+		<p>Please sign in at mapillary.com to continue.</p>
+		<div data-dojo-attach-point="authorizeButtonNode" class="jimu-btn btn-primary mapillary-authorize-button">Sign in</div>
+	</div>
+	<div class="mly-wrapper">
+		<div id="mly-prv"></div>
+		<div class="mapillary-notice" data-dojo-attach-point="noticeNode"></div>
+		<div class="mapillary-maximize" data-dojo-attach-point="maximizeNode"></div>
+		<div class="mapillary-minimize" data-dojo-attach-point="minimizeNode"></div>
+	</div>
+	<div data-dojo-type="dijit/form/Form" data-dojo-attach-point="form" style="display:none;">
+		<div class="form-group row">
+			<h3>Mapillary Project</h3>
+			<input name="projectId" data-dojo-attach-point="projectId" data-dojo-type="dijit/form/ComboBox"
+			       data-dojo-props="required:false" style="width:100%">
+		</div>
+
+		<div class="form-group row">
+			<h3>Traffic Signs</h3>
+			<label>
+				<input name="trafficSigns" data-dojo-type="dijit/form/CheckBox" data-dojo-attach-point="trafficSigns"
+				       type="checkbox">
+				<span class="info" data-dojo-attach-point="trafficSignsLinksNode">Traffic signs display if your're zoomed in to a city.
+          Try these examples: <a href="?lat=55.593896&lng=13.022865&z=15&trafficSigns=true">Malmö</a>, <a
+							href="?lat=55.697507&lng=12.490749&z=15&trafficSigns=true">Copenhagen</a>, <a
+							href="?lat=34.113977&lng=-118.406834&z=15&trafficSigns=true">Los Angeles</a></span>
+			</label>
+		</div>
+
+		<div class="form-group row">
+			<h3>User <span class="info">Works on zoom levels 15 and above - try to zoom in.</span></h3>
+			<div name="userList" data-dojo-attach-point="userList" data-dojo-type="widgets/MapillaryPrivate/TagCloud"
+			     data-dojo-props="labelAttr:'username'"></div>
+			<input name="userSearch" placeholder="Username" data-dojo-attach-point="userSearch"
+			       data-dojo-type="dijit/form/ComboBox" data-dojo-props="required:false" style="width:100%">
+		</div>
+
+		<div class="form-group row">
+			<h3 style="clear:both">Date</h3>
+			<input name="fromDate" data-dojo-attach-point="fromDate" placeholder="From"
+			       data-dojo-type="dijit/form/DateTextBox" style="width:49%;float:left;margin-right:2%">
+			<input name="toDate" data-dojo-attach-point="toDate" placeholder="To"
+			       data-dojo-type="dijit/form/DateTextBox" style="width:49%">
+		</div>
+	</div>
