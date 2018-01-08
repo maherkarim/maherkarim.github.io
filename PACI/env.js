@@ -131,7 +131,7 @@ var
 
         apiUrl = 'https://js.arcgis.com/' + apiVersion;
       } else {
-        apiUrl = portalUrl + 'jsapi/jsapi/';
+        apiUrl = 'https://kuwaitportal.paci.gov.kw/arcgis/jsapi/jsapi/';
       }
     }
   }
