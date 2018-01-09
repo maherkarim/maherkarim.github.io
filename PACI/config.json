@@ -312,7 +312,9 @@
   "isWebTier": false,
   "httpProxy": {
     "useProxy": true,
-    "url": "https://localhost:3344/proxy.js"
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
   },
   "dataSource": {
     "dataSources": {},

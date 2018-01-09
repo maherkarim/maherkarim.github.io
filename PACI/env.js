@@ -104,7 +104,7 @@ var
 
   ////////uncomment the following line when downloading the app
 
-  //apiUrl = 'https://js.arcgis.com/3.22';
+  apiUrl = 'https://js.arcgis.com/3.22';
 
   //////////////////////////////////////////////////////////////
   allCookies = getAllCookies();
@@ -131,7 +131,7 @@ var
 
         apiUrl = 'https://js.arcgis.com/' + apiVersion;
       } else {
-        apiUrl = 'https://kuwaitportal.paci.gov.kw/arcgis/jsapi/jsapi/';
+        apiUrl = portalUrl + 'jsapi/jsapi/';
       }
     }
   }
