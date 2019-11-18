@@ -1,0 +1,44 @@
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#divHeader {
+	color: #ffffff;
+	background-color: #3f51b5;
+	font-size: 18px;
+	font-family: 'Cairo';
+	height: 64px;
+	line-height: 64px;
+}
+
+#divCopyRightsArabic {
+	padding: 16px;
+	font-size: 16px;
+	font-family: 'Cairo';
+	direction: rtl;
+	display: none;
+}
+
+#divCopyRightsEnglish {
+	padding: 16px;
+	font-size: 16px;
+	font-family: 'Cairo';
+	direction: ltr;
+	display: none;
+}
+
+#divFooter {
+	color: #757575;
+	padding: 16px;
+	font-size: 12px;
+	font-family: 'Cairo';
+	display: none;
+}
+
+#divFooter > div {
+	padding: 16px;
+}
